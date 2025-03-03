@@ -125,7 +125,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.6 }}
       >
-        <div className="w-1 h-12 bg-gradient-to-b from-green-600 to-blue-600 dark:from-green-400 dark:to-blue-400 rounded-full animate-pulse"></div>
+       
       </motion.div>
     </section>
   )

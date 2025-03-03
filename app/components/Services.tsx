@@ -84,7 +84,7 @@ export default function Services() {
         </motion.h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <Link key={index} href={service.link}>
+            <Link key={index} href={service.link} target="_blank">
               <motion.div
                 className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-full"
                 initial={{ opacity: 0, y: 50 }}
