@@ -38,10 +38,10 @@ export default function Services() {
     },
     {
       icon: <Server className="w-6 h-6 text-green-500" />,
-      title: "Software Gestion de Proyectos",
-      description: "Creé una plataforma de gestión de proyectos donde los usuarios pueden crear, editar y eliminar proyectos. Utilicé Next.js para la construcción, alertas, y un CRUD completo para manejar los datos, que se guardan en la base de datos.",
-      image: "gestion.png",
-      link: "https://management-beige.vercel.app/"
+      title: "CostoFinal",
+      description: "Consulta Impuestos: Calculadora de Costos para Emprendedores y PYMES. Nuestra plataforma, desarrollada con React, TypeScript, Tailwind CSS y ShadCN, permite conocer el costo real de un producto, sumando impuestos, costos de envío, comisiones y otros gastos ocultos. Ideal para emprendedores, PYMES y vendedores independientes que buscan precios competitivos y sin sorpresas.",
+      image: "coste.png",
+      link: "https://coste-final-calculadora.vercel.app/"
     },
     {
       icon: <Code className="w-6 h-6 text-yellow-400" />, 

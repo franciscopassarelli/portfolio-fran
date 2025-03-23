@@ -38,7 +38,7 @@ const skills = [
       icon: Layout,
       name: "Diseño UI/UX",
       tech: "Tailwind CSS, Material UI, Bootstrap",
-      description: "Creación de interfaces de usuario hermosas e intuitivas con principios y marcos de diseño modernos.",
+      description: "Creación de interfaces de usuario intuitivas con principios y marcos de diseño modernos.",
       color: "text-pink-500",
     },
     {
