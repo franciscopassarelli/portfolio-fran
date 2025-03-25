@@ -41,7 +41,7 @@ export default function Services() {
       title: "CostoFinal",
       description: "Consulta Impuestos: Calculadora de Costos para Emprendedores y PYMES. Nuestra plataforma, desarrollada con React, TypeScript, Tailwind CSS y ShadCN, permite conocer el costo real de un producto, sumando impuestos, costos de envío, comisiones y otros gastos ocultos. Ideal para emprendedores, PYMES y vendedores independientes que buscan precios competitivos y sin sorpresas.",
       image: "coste.png",
-      link: "https://coste-final-calculadora.vercel.app/"
+      link: "https://costo-final.vercel.app/"
     },
     {
       icon: <Code className="w-6 h-6 text-yellow-400" />, 
