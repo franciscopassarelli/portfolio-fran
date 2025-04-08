@@ -12,11 +12,32 @@ export default function Education() {
       institution: "Universidad Nacional del Oeste",
       period: "Feb-2025 – Actualidad",
       achievements: [
-        "Se encontrará capacitado especialmente para el análisis y desarrollo de sistemas informáticos con principal énfasis en el análisis y desarrollo de sistemas web y móviles, ya que cuenta con una capacitación en el desarrollo web y diseño gráfico.",
-        "Además contará con una amplia formación de trabajo en equipo y suficiencia para entender y reconocer las necesidades que las distintas instituciones puedan tener con relación a los sistemas informáticos",
         "Los alcances del título le permitirán al egresado colaborar en tareas de supervisión, mantenimiento, planificación, desarrollo o servicios especializados en sistemas de diseño gráfico y aplicaciones web.",
       ],
     },
+    {
+      degree: "Carrera desarrollo Front-End React.js",
+      institution: "Coderhouse",
+      period: "Agosto 2022 – Enero 2023",
+      achievements: [
+        "Diseño y desarrollo de interfaces responsivas con HTML, CSS y JavaScript.",
+        "Construcción de aplicaciones SPA utilizando React.js y manejo de estado con hooks.",
+        "Integración con APIs REST para consumo de datos dinámicos.",
+        "Uso de herramientas de control de versiones como Git y GitHub.",
+      ],
+    },
+    {
+      degree: "Carrera desarrollo Back-End",
+      institution: "Coderhouse",
+      period: "Marzo 2024 – Agosto 2024",
+      achievements: [
+        "Desarrollo de APIs RESTful utilizando Node.js y Express.",
+        "Gestión de bases de datos relacionales (SQL) y no relacionales (MongoDB).",
+        "Implementación de operaciones CRUD y validaciones de datos.",
+        "Manejo de autenticación y autorización con tokens JWT.",
+        "Introducción a la programación con C# y fundamentos de .NET.",
+      ]
+    }
   ]
 
   return (
@@ -34,7 +55,7 @@ export default function Education() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl relative overflow-hidden"
+              className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl relative overflow-hidden mb-10 border border-gray-200 dark:border-gray-700"
             >
               <div className="absolute top-0 left-0 w-32 h-32 bg-purple-200 dark:bg-purple-700 rounded-br-full z-0 opacity-50"></div>
               <div className="relative z-10">
@@ -69,4 +90,3 @@ export default function Education() {
     </section>
   )
 }
-
