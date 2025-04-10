@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code, Database, Server, Zap } from "lucide-react"
+import { Code, Database, GitBranch, Server} from "lucide-react"
 import Image from "next/image"
 
 export default function About() {
@@ -13,7 +13,12 @@ export default function About() {
       title: "Bases de Datos",
       description: "MongoDB, Firebase, SQL.",
     },
-    { icon: <Zap className="w-8 h-8 text-yellow-500" />, title: "Rendimiento", description: "Optimización, Caching" },
+    {
+      icon: <GitBranch className="w-8 h-8 text-indigo-500" />,
+      title: "DevOps & Tools",
+      description: "Docker, Git, GitHub, Postman",
+    },
+    
   ]
 
   return (

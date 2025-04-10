@@ -1,12 +1,20 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code, Layout, Server, Smartphone } from "lucide-react"
+import { BoxIcon, Code, Layout, Server, Smartphone } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
 export default function Services() {
   const services = [
+
+    {
+      icon: <BoxIcon className="w-6 h-6 text-blue-400" />,
+      title: "Sistema de Gestión de Stock y Métricas",
+      description: "Desarrollé este sistema con React, Tailwind CSS y Firebase para un cliente que necesitaba optimizar el control de stock y el análisis de métricas. Actualmente está en uso y le permite gestionar productos, precios y balances de forma simple y eficiente. La versión compartida es una demo, con base de datos propia en la versión real.",
+      image: "panel.png",
+      link: "https://sistemastock.vercel.app/"
+    },
     {
       icon: <Layout className="w-6 h-6 text-blue-500" />,
       title: "Exploramás",
@@ -65,6 +73,14 @@ export default function Services() {
       image: "burger.png",
       link: "https://franciscopassarelli.github.io/Burguer-B/"
     },
+    {
+      icon: <Server className="w-6 h-6 text-green-500" />,
+      title: "QuePrecio",
+      description: "Calculadora de Precios Inteligente: Similar a la anterior. Herramienta de Precisión para Emprendedores y PYMES. Diseñada con tecnologías modernas como React, TypeScript, Tailwind CSS y ShadCN, esta plataforma permite calcular precios finales con exactitud, considerando márgenes de ganancia, costos fijos, variables y estrategias personalizadas. Ideal para quienes buscan optimizar ingresos y tomar decisiones comerciales basadas en datos reales.",
+      image: "Queprecio.png",
+      link: "https://que-precio.vercel.app/"
+    },
+   
   ]
 
   return (

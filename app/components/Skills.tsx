@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code, Database, Server, Layout, GitBranch, Terminal, Layers, Cpu, Globe, Workflow } from "lucide-react"
+import { Code, Database, Server, Layout, GitBranch, Terminal, Layers, Cpu, Globe, Workflow, BoxIcon } from "lucide-react"
 import AnimatedSectionHeader from "./AnimatedSectionHeader"
 
 const SkillIcon = ({ icon: Icon, color }: { icon: any; color: string }) => (
@@ -83,6 +83,14 @@ const skills = [
       description: "Trabajo eficiente en entornos ágiles con enfoque en la entrega continua.",
       color: "text-cyan-500",
     },
+    {
+      icon: BoxIcon,
+      name: "Contenedores",
+      tech: "Docker, Docker Compose",
+      description: "Empaquetado y despliegue de aplicaciones en entornos portables y consistentes.",
+      color: "text-sky-500",
+    },
+    
   ]
   
 
