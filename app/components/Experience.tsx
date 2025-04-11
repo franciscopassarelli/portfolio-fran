@@ -13,43 +13,42 @@ export default function Experience() {
       period: "nov-2024 - feb-2025",
       role: "Frontend Web Developer",
       responsibilities: [
-        "Como responsable del frontend y el diseño de la interfaz de la agencia de viajes, me encargué de crear una experiencia de usuario intuitiva utilizando React.js y Tailwind CSS.",
-        "Colaboré estrechamente con los desarrolladores backend y los testers para garantizar la robustez y funcionalidad de la plataforma.",
-        "Participé en la integración y consumo de APIs, y utilicé Git para el control de versiones y una colaboración eficiente en el equipo.",
-        "Para el backend, se utilizaron Java y MySQL para garantizar la eficiencia en el manejo de datos y operaciones (trabajo realizado en colaboración con el equipo backend).",
-        "Contribuí con tareas innovadoras, como la implementación de tarifas exclusivas, reservas flexibles y atención personalizada para los usuarios, además de herramientas de gestión para los administradores."
+        "Desarrollé una experiencia intuitiva con React.js y Tailwind CSS, colaborando con backend y testers para asegurar una plataforma robusta.",
+        "Integré APIs, utilicé Git para control de versiones y Docker para entornos de desarrollo.",
+        "El backend fue desarrollado en Java y MySQL (a cargo del equipo backend).",
+        "Aporté funciones clave como tarifas exclusivas, reservas flexibles, atención personalizada y herramientas de gestión para administradores."
       ],
       
+    },
+
+    {
+      company: "Fullstack Developer Independiente",
+      location: "Remoto",
+      period: "Abr-2022 - Mar-2025",
+      role: "Fullstack Developer",
+      responsibilities: [
+        "Desarrollo de soluciones para clientes y simulaciones laborales:",
+        "Software de gestión de stock para comercio.",
+        "Sistema de turnos para club deportivo.",
+        "Tienda online para empresa agrícola.",
+        "Web app para agencia de viajes (proyecto grupal simulado).",
+        "Plataforma para emprendedores y PyMEs.",
+        "Servidor de e-commerce autoadministrable.",
+        "Desarrolle un sistema Software as a Service (SaaS), (proyecto grupal simulado).",
+      ],
     },
 
     {
       company: "Contactomaq",
       location: "Presencial",
       period: "nov-2023 - ene 2025",
-      role: "Responsable de Plataforma de Mercado Libre",
+      role: "Responsable de E-commerce y Ventas Online",
       responsibilities: [
         "Gestión de productos y despacho de pedidos en la plataforma de Mercado Libre.",
         "Creación de una página web. (Desarrollo de una Tienda Online para visualización de productos, conectando usuarios con la plataforma de Mercado Libre).",
         "Especialista en Operaciones Ecommerce, atención al cliente y supervisión de stock.",
         "Coordiné la gestión de devoluciones y reclamos, asegurando un proceso ágil y satisfactorio para los clientes.",
         "Mi gestión contribuyó a una mayor visibilidad de los productos, logrando aumentar las ventas en la plataforma.",
-      ],
-    },
-
-    {
-      company: "Fullstack Developer Independiente",
-      location: "Remoto",
-      period: "Abr-2022 - Dic-2024",
-      role: "Fullstack Developer",
-      responsibilities: [
-        "Como desarrollador, he trabajado en varios proyectos funcionales de manera independiente y en equipo.",
-        "Agencia de Viajes: Exploramás. Desarrollé una plataforma de reservas de viajes, permitiendo a los usuarios explorar destinos y realizar reservas de manera fácil y rápida, con un diseño interactivo y accesible.",
-        "Software de Turnos: El Campito Tenis Club. Creé un sistema de gestión de turnos para un club de tenis, optimizando la reserva de canchas y la administración de horarios, mejorando la experiencia tanto para los usuarios como para los administradores del club.",
-        "Desarrollo Tienda Online: Contactomaq. Desarrollé una tienda en línea funcional, permitiendo a los usuarios explorar productos, realizar compras y gestionar sus pedidos, con integración de pagos en línea para una experiencia de compra completa.",
-        "Perfil de Autenticación: AuthProfile. Un sistema seguro de inicio de sesión y registro que permite a los usuarios crear y gestionar su perfil profesional de manera exclusiva, garantizando acceso a herramientas personalizadas para la creación y exportación de CV.",
-        "Administrador de Proyectos: Desarrollé una herramienta de gestión de proyectos que facilita el seguimiento de tareas, la colaboración entre equipos y la planificación de proyectos, ayudando a mejorar la productividad de los usuarios.",
-        "E-commerce Autoadministrable: Implementé una tienda de comercio electrónico autoadministrable, donde los administradores pueden gestionar productos, actualizar inventarios y procesar pedidos sin necesidad de intervención externa.",
-        "Web API: Movie App. Creé una aplicación web que consume una API para mostrar información sobre películas y series, proporcionando a los usuarios una interfaz sencilla para buscar, filtrar y explorar contenidos multimedia.",
       ],
     },
   ]

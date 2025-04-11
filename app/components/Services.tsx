@@ -7,81 +7,78 @@ import Link from "next/link"
 
 export default function Services() {
   const services = [
-
     {
       icon: <BoxIcon className="w-6 h-6 text-blue-400" />,
-      title: "Sistema de Gestión de Stock y Métricas",
-      description: "Desarrollé este sistema con React, Tailwind CSS y Firebase para un cliente que necesitaba optimizar el control de stock y el análisis de métricas. Actualmente está en uso y le permite gestionar productos, precios y balances de forma simple y eficiente. La versión compartida es una demo, con base de datos propia en la versión real.",
+      title: "Sistema de Stock y Métricas",
+      description: "Desarrollado con React, Tailwind CSS y Firebase. Permite gestionar productos, precios y métricas de forma simple. Actualmente en uso; esta versión es una demo.",
       image: "panel.png",
       link: "https://sistemastock.vercel.app/"
     },
     {
       icon: <Layout className="w-6 h-6 text-blue-500" />,
       title: "Exploramás",
-      description: "Como parte de un equipo, fui responsable del frontend y del diseño de la interfaz. Durante mis prácticas profesionales en NoCountry, participé en el desarrollo de la agencia de viajes Exploramás, con características innovadoras como tarifas exclusivas, reservas flexibles y atención personalizada para los usuarios, además de herramientas de gestión para los administradores.",
+      description: "Responsable del frontend en una agencia de viajes durante mis prácticas en NoCountry. Implementé reservas flexibles, tarifas exclusivas y paneles administrativos usando React, Tailwind CSS, Git y Docker.",
       image: "exploramas.png",
       link: "https://exploramas.vercel.app/"
     },
     {
       icon: <Server className="w-6 h-6 text-yellow-300" />,
       title: "AuthProfile",
-      description: "Esta aplicación web ha sido desarrollada utilizando React, TypeScript y Material UI, con el objetivo de facilitar la creación y exportación de currículums de manera rápida y sencilla. Permite a los usuarios registrarse, iniciar sesión y crear un perfil personal donde pueden agregar información relevante, como su experiencia, educación, habilidades y una foto de perfil.",
+      description: "App en React y TypeScript para crear y exportar CVs. Incluye login, registro y gestión de perfil con Material UI.",
       image: "gestorcv.png",
       link: "https://authprofile.vercel.app/"
     },
     {
-      icon: <Code className="w-6 h-6 text-purple-500" />, 
-      title: "API Web Contactomaq",
-      description:
-        "Este proyecto es una página de comercio electrónico conectada con Mercado Libre, diseñada para la venta de repuestos de jardinería. Utilicé Next.js para la estructura y Tailwind CSS para el diseño. La integración con Mercado Libre facilita la gestión y actualización de productos.",
+      icon: <Code className="w-6 h-6 text-purple-500" />,
+      title: "E-commerce Contactomaq",
+      description: "Tienda online integrada con Mercado Libre. Construida con Next.js y Tailwind CSS para venta de repuestos y gestión de productos.",
       image: "ecommerce.png",
       link: "https://contactomaq.vercel.app/"
     },
     {
-      icon:  <Code className="w-6 h-6 text-purple-200" />, 
-      title: "Web E-commerce",
-      description: "Este proyecto es una tienda en línea especializada en la venta de tenis. Utiliza Tailwind CSS para el diseño visual, Next.js para la estructura de la aplicación, Firebase para la autenticación de usuarios y la gestión de datos. Además, cuenta con una sección de administración para gestionar productos, con alertas para notificaciones en tiempo real.",
+      icon: <Code className="w-6 h-6 text-purple-200" />,
+      title: "Tienda Frantenis",
+      description: "Tienda online para venta de tenis. Usa Next.js, Tailwind CSS y Firebase para autenticación y gestión de productos en tiempo real.",
       image: "frantenis.png",
       link: "https://next-aplication-five.vercel.app/"
     },
     {
       icon: <Server className="w-6 h-6 text-green-500" />,
       title: "CostoFinal",
-      description: "Consulta Impuestos: Calculadora de Costos para Emprendedores y PYMES. Nuestra plataforma, desarrollada con React, TypeScript, Tailwind CSS y ShadCN, permite conocer el costo real de un producto, sumando impuestos, costos de envío, comisiones y otros gastos ocultos. Ideal para emprendedores, PYMES y vendedores independientes que buscan precios competitivos y sin sorpresas.",
+      description: "Calculadora de costos para PYMES y emprendedores. Permite conocer el precio final de productos sumando impuestos y comisiones. Hecho con React, Tailwind y ShadCN.",
       image: "coste.png",
       link: "https://costo-final.vercel.app/"
     },
     {
-      icon: <Code className="w-6 h-6 text-yellow-400" />, 
-      title: "Web API Movie",
-      description: "Aplicación web que permite a los usuarios buscar películas por nombre y visualizar detalles utilizando la API Cinema. La interfaz incluye un formulario de contacto y una sección de ayuda interactiva para asistir a los usuarios. Además, se implementa una solicitud de feedback después de un minuto de inactividad.",
+      icon: <Code className="w-6 h-6 text-yellow-400" />,
+      title: "Movie App",
+      description: "App para buscar películas mediante una API externa. Incluye formulario de contacto, sección de ayuda y feedback automático.",
       image: "movie.png",
       link: "https://movie-app-beige-chi.vercel.app/"
     },
     {
       icon: <Server className="w-6 h-6 text-orange-400" />,
-      title: "Software Gestion",
-      description:
-        "Desarrollé un software para gestionar y administrar los horarios y días de las canchas de tenis. Además incluye un sección para crear torneo, crear jugadores en un ranking y que persistan guardados. Todo esto para que puedan usarlo los dias que quieran. (React JS).",
-      image: "campito.png",
+      title: "Campito Tenis",
+      description: "Software para gestión de turnos, torneos y rankings de jugadores en un club de tenis. Hecho con React.",
+      image: "campitoclub.png",
       link: "https://software-el-campito-tenis-club.vercel.app/"
     },
     {
       icon: <Layout className="w-6 h-6 text-blue-400" />,
       title: "BurgerBeer",
-      description: "He desarrollado una plataforma web interactiva para un negocio de ventas en línea, que incluye un carrito de compras integrado para facilitar el proceso de compra. Utilicé JavaScript para la funcionalidad dinámica del sitio, SweetAlert para mostrar alertas personalizadas de manera visualmente atractiva y CSS para crear un diseño intuitivo y moderno.",
+      description: "Tienda online con carrito de compras. Hecha con JavaScript, CSS y SweetAlert para alertas personalizadas.",
       image: "burger.png",
       link: "https://franciscopassarelli.github.io/Burguer-B/"
     },
     {
       icon: <Server className="w-6 h-6 text-green-500" />,
       title: "QuePrecio",
-      description: "Calculadora de Precios Inteligente: Similar a la anterior. Herramienta de Precisión para Emprendedores y PYMES. Diseñada con tecnologías modernas como React, TypeScript, Tailwind CSS y ShadCN, esta plataforma permite calcular precios finales con exactitud, considerando márgenes de ganancia, costos fijos, variables y estrategias personalizadas. Ideal para quienes buscan optimizar ingresos y tomar decisiones comerciales basadas en datos reales.",
+      description: "Calculadora inteligente de precios. Similar a CostoFinal, pero con enfoque en márgenes y estrategias comerciales. React, Tailwind y ShadCN.",
       image: "Queprecio.png",
       link: "https://que-precio.vercel.app/"
-    },
-   
-  ]
+    }
+  ];
+  
 
   return (
     <section

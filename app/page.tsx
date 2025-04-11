@@ -13,9 +13,9 @@ export default function Home() {
       <FloatingNav />
       <Hero />
       <About />
-      <Experience />
-      <Skills />
       <Services />
+      <Skills />
+      <Experience />
       <Education />
       <Contact />
     </main>
