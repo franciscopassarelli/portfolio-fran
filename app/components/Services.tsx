@@ -40,7 +40,7 @@ export default function Services() {
       title: "Tienda Frantenis",
       description: "Tienda online para venta de tenis. Usa Next.js, Tailwind CSS y Firebase para autenticación y gestión de productos en tiempo real.",
       image: "frantenis.png",
-      link: "https://next-aplication-five.vercel.app/"
+      link: "https://tenisweb.vercel.app/"
     },
     {
       icon: <Server className="w-6 h-6 text-green-500" />,
@@ -54,14 +54,14 @@ export default function Services() {
       title: "Movie App",
       description: "App para buscar películas mediante una API externa. Incluye formulario de contacto, sección de ayuda y feedback automático.",
       image: "movie.png",
-      link: "https://movie-app-beige-chi.vercel.app/"
+      link: "https://compucine.vercel.app/"
     },
     {
       icon: <Server className="w-6 h-6 text-orange-400" />,
       title: "Campito Tenis",
       description: "Software para gestión de turnos, torneos y rankings de jugadores en un club de tenis. Hecho con React.",
       image: "campitoclub.png",
-      link: "https://software-el-campito-tenis-club.vercel.app/"
+      link: "https://software-el-campito.vercel.app/"
     },
     {
       icon: <Layout className="w-6 h-6 text-blue-400" />,
@@ -78,7 +78,7 @@ export default function Services() {
       link: "https://que-precio.vercel.app/"
     }
   ];
-  
+   
 
   return (
     <section
