@@ -18,10 +18,10 @@ export default function Services() {
     {
       icon: <Code className="w-6 h-6 text-purple-200" />,
       title: "Tienda Frantenis",
-      description: "Tienda online para tenis. Hecha con Next.js y Firebase.",
+      description: "E-commerce autoadministrable, tienda online para tenis. Hecha con Next.js y Firebase.",
       image: "frantenis.png",
       link: "https://tenisweb.vercel.app/",
-      featured: false,
+      featured: true,
     },
     {
       icon: <Layout className="w-6 h-6 text-blue-500" />,
@@ -52,7 +52,7 @@ export default function Services() {
       title: "Campito Tenis - Clientes",
       description: "App web para consultar turnos en tiempo real. Sincronizada con la de administración. Hecha con React.",
       image: "Reserva.png",
-      link: "https://",
+      link: "https://el-campito-app.vercel.app/",
       featured: true,
     },
     {
