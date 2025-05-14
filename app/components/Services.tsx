@@ -26,7 +26,7 @@ export default function Services() {
     {
       icon: <Layout className="w-6 h-6 text-blue-500" />,
       title: "Exploramás",
-      description: "App de reservas para agencia de viajes. React, Tailwind y Docker.",
+      description: "App de reservas para agencia de viajes. Este proyecto es una simulación laboral grupal en No Countri. Se usó React, Tailwind, Firebase, Docker.",
       image: "exploramas.png",
       link: "https://exploramas.vercel.app/",
       featured: false,
@@ -34,7 +34,7 @@ export default function Services() {
     {
       icon: <Code className="w-6 h-6 text-purple-500" />,
       title: "E-commerce Contactomaq",
-      description: "Tienda online con integración Mercado Libre. Next.js + Tailwind.",
+      description: "Tienda online con integración Mercado Libre. Para cliente de empresa, proyecto freelance. Next.js + Tailwind.",
       image: "ecommerce.png",
       link: "https://contactomaq.vercel.app/",
       featured: false,
@@ -95,6 +95,14 @@ export default function Services() {
       link: "https://que-precio.vercel.app/",
       featured: false,
     },
+    {
+      icon: <Server className="w-6 h-6 text-green-500" />,
+      title: "Rick and Morty",
+      description: "App para buscar personajes de la serie usando API externa.",
+      image: "rickimage.png",
+      link: "https://ricky-morthy.vercel.app/",
+      featured: false,
+    }
   ];
 
   const orderedServices = [
