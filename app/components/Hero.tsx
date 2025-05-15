@@ -34,7 +34,7 @@ export default function Hero() {
 
       {/* Animated Gradient */}
       <div className="absolute inset-0 z-0 opacity-30">
-        <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-teal-500 to-blue-600 animate-gradient-x"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-1000 via-teal-500 to-blue-600 animate-gradient-x"></div>
       </div>
 
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">

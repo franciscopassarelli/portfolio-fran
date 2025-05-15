@@ -10,7 +10,7 @@ export default function Services() {
     {
       icon: <BoxIcon className="w-6 h-6 text-blue-400" />,
       title: "Sistema de Stock y Métricas",
-      description: "App web para gestionar productos, precios y métricas. Actualmente en uso. Hecha con React, Tailwind y Firebase.",
+      description: "App web para gestionar productos, precios y métricas. Actualmente en uso. Hecha con React, Tailwind CSS y Firebase.",
       image: "panel.png",
       link: "https://sistemastock.vercel.app/",
       featured: true,
@@ -18,7 +18,7 @@ export default function Services() {
     {
       icon: <Code className="w-6 h-6 text-purple-200" />,
       title: "Tienda Frantenis",
-      description: "E-commerce autoadministrable, tienda online para tenis. Hecha con Next.js y Firebase.",
+      description: "E-commerce autoadministrable, tienda online para tenis. Hecha con Next.js, Firebase y Tailwind CSS.",
       image: "frantenis.png",
       link: "https://tenisweb.vercel.app/",
       featured: true,
@@ -26,7 +26,7 @@ export default function Services() {
     {
       icon: <Layout className="w-6 h-6 text-blue-500" />,
       title: "Exploramás",
-      description: "App de reservas para agencia de viajes. Este proyecto es una simulación laboral grupal en No Countri. Se usó React, Tailwind, Firebase, Docker.",
+      description: "App de reservas para agencia de viajes. Este proyecto es una simulación laboral grupal en No Countri. Se usó React, Tailwind CSS, Firebase, Docker.",
       image: "exploramas.png",
       link: "https://exploramas.vercel.app/",
       featured: false,
@@ -34,7 +34,7 @@ export default function Services() {
     {
       icon: <Code className="w-6 h-6 text-purple-500" />,
       title: "E-commerce Contactomaq",
-      description: "Tienda online con integración Mercado Libre. Para cliente de empresa, proyecto freelance. Next.js + Tailwind.",
+      description: "Tienda online con integración Mercado Libre. Para cliente de empresa, proyecto freelance. Next.js + Tailwind CSS.",
       image: "ecommerce.png",
       link: "https://contactomaq.vercel.app/",
       featured: false,
@@ -42,7 +42,7 @@ export default function Services() {
     {
       icon: <Server className="w-6 h-6 text-orange-400" />,
       title: "Campito Tenis - Admin",
-      description: "App web para administrar turnos. Vinculada con la app cliente vía Firebase. Hecha con React.",
+      description: "App web para administrar turnos. Vinculada con la app cliente vía Firebase. Hecha con React y Material UI.",
       image: "campitoclub.png",
       link: "https://software-el-campito.vercel.app/",
       featured: true,
@@ -50,7 +50,7 @@ export default function Services() {
     {
       icon: <Server className="w-6 h-6 text-orange-400" />,
       title: "Campito Tenis - Clientes",
-      description: "App web para consultar turnos en tiempo real. Sincronizada con la de administración. Hecha con React.",
+      description: "App web para consultar turnos en tiempo real. Sincronizada con la de administración. Hecha con React y Material UI.",
       image: "Reserva.png",
       link: "https://el-campito-app.vercel.app/",
       featured: true,
@@ -66,7 +66,7 @@ export default function Services() {
     {
       icon: <Code className="w-6 h-6 text-yellow-400" />,
       title: "Movie App",
-      description: "App para buscar películas usando API externa.",
+      description: "App para buscar películas usando API externa. JavaScript puro y Bootstrap CSS.",
       image: "movie.png",
       link: "https://compucine.vercel.app/",
       featured: false,
@@ -74,7 +74,7 @@ export default function Services() {
     {
       icon: <Layout className="w-6 h-6 text-blue-400" />,
       title: "BurgerBeer",
-      description: "Tienda online con carrito de compras. JavaScript puro.",
+      description: "Tienda online con carrito de compras. JavaScript puro y CSS.",
       image: "burger.png",
       link: "https://franciscopassarelli.github.io/Burguer-B/",
       featured: false,
@@ -82,7 +82,7 @@ export default function Services() {
     {
       icon: <Server className="w-6 h-6 text-yellow-300" />,
       title: "AuthProfile",
-      description: "App para crear y exportar CVs. Hecha en React y TypeScript.",
+      description: "App para crear y exportar CVs. Hecha en React y TypeScript y para diseño Material UI.",
       image: "gestorcv.png",
       link: "https://authprofile.vercel.app/",
       featured: false,
