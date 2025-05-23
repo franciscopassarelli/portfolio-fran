@@ -29,7 +29,7 @@ export default function Experience() {
       company: "No Country",
       location: "Remoto",
       period: "nov-2024 - feb-2025",
-      role: "Frontend Web Developer",
+      role: "Desarrollador Frontend",
       logo: "/nocountry.jpg",
       responsibilities: [
         "Desarrollé una experiencia intuitiva con React.js y Tailwind CSS, colaborando con backend y testers para asegurar una plataforma robusta.",
