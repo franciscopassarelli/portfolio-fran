@@ -7,11 +7,30 @@ import AnimatedSectionHeader from "./AnimatedSectionHeader"
 
 export default function Experience() {
   const experiences = [
+
+    {
+      company: "En red consultora",
+      location: "Remoto",
+      period: "dic-2024 - Actualidad",
+      role: "Desarrollador Frontend",
+      logo: "/enred.jpg",
+      responsibilities: [
+        "Colaboro como desarrollador frontend freelance en Enred Consultora, una agencia especializada en comunicación digital y desarrollo web. Me encargo de:",
+        "Desarrollar sitios web desde cero según requerimientos del cliente.",
+        "Diseñar interfaces modernas y responsivas usando React, Next.js, Firebase, Tailwind CSS (u otras herramientas según proyecto).",
+        "Refactorizar y mantener sitios existentes para mejorar su rendimiento y experiencia de usuario.",
+        "Implementar funcionalidades específicas y optimizar flujos de interacción.",
+        "Aportar soluciones técnicas a medida para marcas, PyMEs y emprendedores."
+      ],
+      
+    },
+
     {
       company: "No Country",
       location: "Remoto",
       period: "nov-2024 - feb-2025",
       role: "Frontend Web Developer",
+      logo: "/nocountry.jpg",
       responsibilities: [
         "Desarrollé una experiencia intuitiva con React.js y Tailwind CSS, colaborando con backend y testers para asegurar una plataforma robusta.",
         "Integré APIs, utilicé Git para control de versiones y Docker para entornos de desarrollo.",
@@ -33,8 +52,7 @@ export default function Experience() {
         "Tienda online para empresa agrícola.",
         "Web app para agencia de viajes (proyecto grupal simulado).",
         "Plataforma para emprendedores y PyMEs.",
-        "Servidor de e-commerce autoadministrable.",
-        "Desarrolle un sistema Software as a Service (SaaS), (proyecto grupal simulado).",
+        "E-commerce autoadministrable. (Frontend y Backend).",
       ],
     },
 
@@ -74,8 +92,22 @@ export default function Experience() {
                 className="absolute top-0 right-0 w-32 h-32 bg-blue-200 dark:bg-blue-700 rounded-bl-full z-0 opacity-50 
                 transition-transform duration-300 group-hover:scale-110"
               ></div>
+
+              
               <div className="relative z-10">
+              
                 <h3 className="text-2xl font-semibold mb-2 dark:text-white flex items-center">
+                    {exp.logo && (
+      <div className="mr-4">
+      <Image
+        src={exp.logo}
+        alt={`${exp.company} logo`}
+        width={60}
+        height={60}
+        className="rounded-md object-contain"
+      />
+      </div>
+  )}
                   {exp.company === "Freelance" ? <Globe className="w-6 h-6 mr-2 text-blue-500" /> : null}
                   {exp.company}
                 </h3>
