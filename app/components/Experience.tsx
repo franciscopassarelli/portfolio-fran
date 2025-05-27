@@ -20,7 +20,7 @@ export default function Experience() {
         "Diseñar interfaces modernas y responsivas usando React, Next.js, Firebase, Tailwind CSS (u otras herramientas según proyecto).",
         "Refactorizar y mantener sitios existentes para mejorar su rendimiento y experiencia de usuario.",
         "Implementar funcionalidades específicas y optimizar flujos de interacción.",
-        "Aportar soluciones técnicas a medida para marcas, PyMEs y emprendedores."
+        "Análisis técnico y desarrollo de requerimientos para distintos proyectos."
       ],
       
     },
