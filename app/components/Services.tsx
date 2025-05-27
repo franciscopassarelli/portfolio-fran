@@ -26,7 +26,7 @@ export default function Services() {
     {
       icon: <Layout className="w-6 h-6 text-blue-500" />,
       title: "Exploramás",
-      description: "App de reservas para agencia de viajes. Este proyecto es una simulación laboral grupal en No Countri. Se usó React, Tailwind CSS, Firebase, Docker.",
+      description: "App de reservas para agencia de viajes. Este proyecto es una simulación laboral grupal en No Country. Se usó React, Tailwind CSS, Firebase, Docker.",
       image: "exploramas.png",
       link: "https://exploramas.vercel.app/",
       featured: false,
