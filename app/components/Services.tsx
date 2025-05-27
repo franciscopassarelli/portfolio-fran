@@ -89,10 +89,10 @@ export default function Services() {
     },
     {
       icon: <Server className="w-6 h-6 text-green-500" />,
-      title: "QuePrecio",
-      description: "Calculadora inteligente de precios con enfoque comercial.",
-      image: "Queprecio.png",
-      link: "https://que-precio.vercel.app/",
+      title: "GestiónEM",
+      description: "Sistema Gestión de empleados y clientes. Hecho con React, Tailwind CSS y Firebase.",
+      image: "empleados.png",
+      link: "https://gestion-em.vercel.app/",
       featured: false,
     },
     {
