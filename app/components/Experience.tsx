@@ -12,23 +12,36 @@ export default function Experience() {
       company: "En red consultora",
       location: "Remoto",
       period: "dic-2024 - Actualidad",
-      role: "Desarrollador Frontend",
+      role: "Fullstack Developer",
       logo: "/enred.jpg",
       responsibilities: [
-        "Colaboro como desarrollador frontend freelance en Enred Consultora, una agencia especializada en comunicación digital y desarrollo web. Me encargo de:",
+        "Colaboro como Desarrollador en En red Consultora, una agencia especializada en comunicación digital y desarrollo web. Me encargo de:",
         "Desarrollar sitios web desde cero según requerimientos del cliente.",
-        "Diseñar interfaces modernas y responsivas usando React, Next.js, Firebase, Tailwind CSS (u otras herramientas según proyecto).",
-        "Refactorizar y mantener sitios existentes para mejorar su rendimiento y experiencia de usuario.",
-        "Implementar funcionalidades específicas y optimizar flujos de interacción.",
-        "Análisis técnico y desarrollo de requerimientos para distintos proyectos."
+        "Creación de softwares, sistemas, interfaces modernas usando Tecnologías como React.js, Next.js, TypeScript, MongoDB, Tailwind.(u otras herramientas según proyecto).",
+        "Participación en el proceso de subida y despliegue de proyectos, utilizando herramientas como Git y flujos de trabajo con CI/CD, asegurando la correcta conexión con las bases de datos y el funcionamiento estable en producción."
       ],
-      
+    },
+
+
+    {
+      company: "Freelance",
+      location: "Remoto",
+      period: "Abr-2022 - Mar-2025",
+      role: "Software Developer",
+      responsibilities: [
+        "Desarrollo de soluciones para clientes y simulaciones laborales:",
+        "Sistema tipo ERP para gestión de stock",
+        "Plataforma de turnos online para un club, automatizando las reservas y pagos.",
+        "Tienda e-commerce para una empresa agrícola, conectando con nuevos clientes",
+        "Plataforma para emprendedores y PyMEs.",
+        "Backend autoadministrable con panel de control para e-commerce",
+      ],
     },
 
     {
       company: "No Country",
       location: "Remoto",
-      period: "nov-2024 - feb-2025",
+      period: "sep-2024 - nov-2024",
       role: "Desarrollador Frontend",
       logo: "/nocountry.jpg",
       responsibilities: [
@@ -40,21 +53,6 @@ export default function Experience() {
       
     },
 
-    {
-      company: "Fullstack Developer Independiente",
-      location: "Remoto",
-      period: "Abr-2022 - Mar-2025",
-      role: "Fullstack Developer",
-      responsibilities: [
-        "Desarrollo de soluciones para clientes y simulaciones laborales:",
-        "Software de gestión de stock para comercio.",
-        "Sistema de turnos para club deportivo.",
-        "Tienda online para empresa agrícola.",
-        "Web app para agencia de viajes (proyecto grupal simulado).",
-        "Plataforma para emprendedores y PyMEs.",
-        "E-commerce autoadministrable. (Frontend y Backend).",
-      ],
-    },
 
     {
       company: "Contactomaq",

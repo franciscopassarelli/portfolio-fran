@@ -10,23 +10,44 @@ export default function Services() {
     {
       icon: <BoxIcon className="w-6 h-6 text-blue-400" />,
       title: "Sistema de Stock y Métricas",
-      description: "App web para gestionar productos, precios y métricas. Actualmente en uso. Hecha con React, Tailwind CSS y Firebase.",
+      description: "Software gestiona el stock de productos, ventas y métricas de un negocio. Permite administrar inventario, ventas y generar reportes. Tecnologías: React, Tailwind CSS, Firebase.",
       image: "panel.png",
       link: "https://sistemastock.vercel.app/",
+      featured: false,
+    },
+
+      {
+      icon: <Server className="w-6 h-6 text-green-500" />,
+      title: "EatCPanel",
+      description: "Este software facilita la comunicación entre cocina y administración, mejora el control de insumos y reduce el desperdicio mediante un seguimiento preciso del inventario. Tecnologías: React, Bootstrap, MongoDB, Render(deploy).",
+      image: "/panelstock.png",
+      link: "https://app-cocina.vercel.app/admin",
       featured: true,
     },
+
+     {
+      icon: <Layout className="w-6 h-6 text-blue-400" />,
+      title: "FoodDelivery",
+      description: "Aplicación de delivery de comida. Permite a los usuarios buscar restaurantes, ver menús y realizar pedidos. Incluye un panel de administración para gestionar pedidos y productos. Tecnologías: React, Tailwind CSS, Firebase.",
+      image: "food.png",
+      link: "https://fooddeliverytest.vercel.app/",
+      featured: true,
+    },
+
     {
       icon: <Code className="w-6 h-6 text-purple-200" />,
       title: "Tienda Frantenis",
-      description: "E-commerce autoadministrable, tienda online para tenis. Hecha con Next.js, Firebase y Tailwind CSS.",
-      image: "frantenis.png",
+      description: "eCommerce de ropa y accesorios deportivos. Permite a los usuarios navegar por productos, agregarlos al carrito y realizar pagos. Incluye un panel de administración para gestionar productos y pedidos. Tecnologías: React, Tailwind CSS, Firebase.",
+      image: "ecc.png",
       link: "https://tenisweb.vercel.app/",
-      featured: true,
+      featured: false,
     },
+
+     
     {
       icon: <Layout className="w-6 h-6 text-blue-500" />,
       title: "Exploramás",
-      description: "App de reservas para agencia de viajes. Este proyecto es una simulación laboral grupal en No Country. Se usó React, Tailwind CSS, Firebase, Docker.",
+      description: "app para explorar lugares turísticos. Permite a los usuarios buscar destinos, ver información y fotos. Incluye un panel de administración para gestionar destinos y fotos. Tecnologías: React, Tailwind CSS, Firebase.",
       image: "exploramas.png",
       link: "https://exploramas.vercel.app/",
       featured: false,
@@ -34,7 +55,7 @@ export default function Services() {
     {
       icon: <Code className="w-6 h-6 text-purple-500" />,
       title: "E-commerce Contactomaq",
-      description: "Tienda online con integración Mercado Libre. Para cliente de empresa, proyecto freelance. Next.js + Tailwind CSS.",
+      description: "Tienda online y maquinaria agricola con integración Mercado Libre. Para cliente de empresa, proyecto freelance. Next.js y Tailwind CSS.",
       image: "ecommerce.png",
       link: "https://contactomaq.vercel.app/",
       featured: false,
@@ -45,7 +66,7 @@ export default function Services() {
       description: "App web para administrar turnos. Vinculada con la app cliente vía Firebase. Hecha con React y Material UI.",
       image: "campitoclub.png",
       link: "https://software-el-campito.vercel.app/",
-      featured: true,
+      featured: false,
     },
     {
       icon: <Server className="w-6 h-6 text-orange-400" />,
@@ -66,23 +87,16 @@ export default function Services() {
     {
       icon: <Code className="w-6 h-6 text-yellow-400" />,
       title: "Movie App",
-      description: "App para buscar películas usando API externa. JavaScript puro y Bootstrap CSS.",
+      description: "Aplicación para buscar películas y series. Permite ver detalles, trailers y valoraciones. Hecha con React, Tailwind CSS y la API de TMDB.",
       image: "movie.png",
       link: "https://compucine.vercel.app/",
       featured: false,
     },
-    {
-      icon: <Layout className="w-6 h-6 text-blue-400" />,
-      title: "BurgerBeer",
-      description: "Tienda online con carrito de compras. JavaScript puro y CSS.",
-      image: "burger.png",
-      link: "https://franciscopassarelli.github.io/Burguer-B/",
-      featured: false,
-    },
+  
     {
       icon: <Server className="w-6 h-6 text-yellow-300" />,
       title: "AuthProfile",
-      description: "App para crear y exportar CVs. Hecha en React y TypeScript y para diseño Material UI.",
+      description: "Creación y Exportación de CVs. React, TypeScript y para diseño Material UI.",
       image: "gestorcv.png",
       link: "https://authprofile.vercel.app/",
       featured: false,
@@ -95,14 +109,7 @@ export default function Services() {
       link: "https://gestion-em.vercel.app/",
       featured: false,
     },
-    {
-      icon: <Server className="w-6 h-6 text-green-500" />,
-      title: "Rick and Morty",
-      description: "App para buscar personajes de la serie usando API externa.",
-      image: "rickimage.png",
-      link: "https://ricky-morthy.vercel.app/",
-      featured: false,
-    }
+  
   ];
 
   const orderedServices = [
@@ -123,7 +130,7 @@ export default function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Proyectos
+          Proyectos 
         </motion.h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {orderedServices.map((service, index) => (
