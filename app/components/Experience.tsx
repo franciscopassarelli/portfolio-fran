@@ -9,6 +9,17 @@ export default function Experience() {
   const experiences = [
 
     {
+      company: "SsySc Tech",
+      location: "Remoto",
+      period: "sep-2025 - Actualidad",
+      role: "Desarrollador de Software",
+      logo: "/ssysctech.jpg",
+      responsibilities: [
+        
+      ],
+    },
+
+    {
       company: "En red consultora",
       location: "Remoto",
       period: "dic-2024 - Actualidad",
