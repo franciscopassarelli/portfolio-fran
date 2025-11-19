@@ -7,22 +7,29 @@ import AnimatedSectionHeader from "./AnimatedSectionHeader"
 
 export default function Experience() {
   const experiences = [
+{
+  company: "SsySc Tech",
+  location: "Remoto",
+  period: "sep-2025 - Actualidad",
+  role: "Desarrollador de Software",
+  logo: "/ssysctech.jpg",
+  responsibilities: [
+    "Desarrollo y mantenimiento de aplicaciones web utilizando Next.js en el frontend y NestJS en el backend.",
+    "Implementación de arquitectura modular en frontend con FSD (versión ligera) y Atomic Design.",
+    "Desarrollo backend con NestJS aplicando principios de arquitectura limpia y Domain-Driven Design (DDD).",
+    "Creación de módulos, controladores, servicios y endpoints REST para distintas funcionalidades del sistema.",
+    "Integración entre frontend y backend, diseño de endpoints y estandarización de respuestas.",
+    "Implementación de SSR/CSR según requerimientos del proyecto y construcción de componentes reutilizables con Material-UI.",
+    "Optimización del código, buenas prácticas, separación por responsabilidades y documentación técnica.",
+    "Colaboración en decisiones de arquitectura, mejora continua y calidad del software."
+  ],
+},
 
-    {
-      company: "SsySc Tech",
-      location: "Remoto",
-      period: "sep-2025 - Actualidad",
-      role: "Desarrollador de Software",
-      logo: "/ssysctech.jpg",
-      responsibilities: [
-        
-      ],
-    },
 
     {
       company: "En red consultora",
       location: "Remoto",
-      period: "dic-2024 - Actualidad",
+      period: "oct-2024 - nov-2025",
       role: "Fullstack Developer",
       logo: "/enred.jpg",
       responsibilities: [

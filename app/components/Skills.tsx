@@ -23,7 +23,7 @@ const skills = [
     {
       icon: Server,
       name: "Desarrollo Backend",
-      tech: "Node.js, Express",
+      tech: "Node.js, Express, NestJS ",
       description: "Creación de aplicaciones robustas del lado del servidor, con enfoque en escalabilidad y una arquitectura limpia.",
       color: "text-green-500",
     },
@@ -44,7 +44,7 @@ const skills = [
     {
       icon: GitBranch,
       name: "Control de Versiones",
-      tech: "Git, GitHub",
+      tech: "Git, GitHub, GitLab",
       description: "Gestión eficiente de versiones de código con Git y colaboración efectiva a través de GitHub.",
       color: "text-orange-500",
     },
@@ -90,6 +90,16 @@ const skills = [
       description: "Empaquetado y despliegue de aplicaciones en entornos portables y consistentes.",
       color: "text-sky-500",
     },
+
+    {
+  icon: Workflow,
+  name: "Herramientas de Trabajo",
+  tech: "Jira, Confluence, Microsoft Teams, Outlook",
+  description:
+    "Gestión de tareas, documentación, comunicación y coordinación de proyectos en entornos ágiles.",
+  color: "text-blue-400",
+},
+
     
   ]
   

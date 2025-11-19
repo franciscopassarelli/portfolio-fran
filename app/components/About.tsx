@@ -6,17 +6,17 @@ import Image from "next/image"
 
 export default function About() {
   const skills = [
-    { icon: <Code className="w-8 h-8 text-green-500" />, title: "Frontend", description: "React.js, Next.js" },
-    { icon: <Server className="w-8 h-8 text-blue-500" />, title: "Backend", description: "Node.js, Express.js, C#.NET" },
+    { icon: <Code className="w-8 h-8 text-green-500" />, title: "Frontend", description: "React.js, Next.js, Angular" },
+    { icon: <Server className="w-8 h-8 text-blue-500" />, title: "Backend", description: "Node.js, Express.js, NestJS, C#.NET" },
     {
       icon: <Database className="w-8 h-8 text-purple-500" />,
       title: "Bases de Datos",
-      description: "MongoDB, Firebase, SQL.",
+      description: "MongoDB, Firebase, SQL server.",
     },
     {
       icon: <GitBranch className="w-8 h-8 text-indigo-500" />,
       title: "DevOps & Tools",
-      description: "Docker, Git, GitHub, Postman",
+      description: "Docker, Git, GitHub, Postman, Jira.",
     },
     
   ]
@@ -45,10 +45,14 @@ export default function About() {
             transition={{ duration: 0.5 }}
           >
             <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-            Actualmente estudio Tecnicatura en Tecnologías Web en la Universidad Nacional del Oeste. Mi carrera en programación Full Stack comenzó en 2022 de manera autodidacta, complementando mi formación en la academia Coderhouse.
+            Estudiante de Tecnicatura en tecnologías web en Universidad Nacional del Oeste.
             </p>
+            
+            <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+             Mi carrera en programación Full Stack comenzó en 2022 de manera autodidacta, complementando mi formación en la academia Coderhouse.
+             </p>
             <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
-            Mi enfoque está en el análisis de requerimientos y la implementación de buenas prácticas en el desarrollo de aplicaciones. He trabajado tanto en proyectos individuales como en equipo, desarrollando soluciones completas para el frontend y el backend.
+            Actualmente trabajando como Desarrollador de Software en SsySc Tech.
             </p>
           </motion.div>
           <motion.div

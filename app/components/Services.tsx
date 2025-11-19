@@ -146,7 +146,7 @@ export default function Services() {
               >
                 {service.featured && (
                   <span className="absolute top-2 right-2 text-xs bg-green-500 text-white px-2 py-0.5 rounded">
-                    En uso
+                    Demo Pro
                   </span>
                 )}
                 <div className="flex items-center mb-4">
