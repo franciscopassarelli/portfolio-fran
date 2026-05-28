@@ -1,20 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BoxIcon, Code, Layout, Server } from "lucide-react";
+import { Code, Layout, Server } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Services() {
   const services = [
-    {
-      icon: <BoxIcon className="w-6 h-6 text-blue-400" />,
-      title: "Sistema de Stock y Métricas",
-      description: "Software gestiona el stock de productos, ventas y métricas de un negocio. Permite administrar inventario, ventas y generar reportes. Tecnologías: React, Tailwind CSS, Firebase.",
-      image: "panel.png",
-      link: "https://sistemastock.vercel.app/",
-      featured: false,
-    },
 
       {
       icon: <Server className="w-6 h-6 text-green-500" />,
@@ -32,15 +24,6 @@ export default function Services() {
       image: "food.png",
       link: "https://fooddeliverytest.vercel.app/",
       featured: true,
-    },
-
-    {
-      icon: <Code className="w-6 h-6 text-purple-200" />,
-      title: "Tienda Frantenis",
-      description: "eCommerce de ropa y accesorios deportivos. Permite a los usuarios navegar por productos, agregarlos al carrito y realizar pagos. Incluye un panel de administración para gestionar productos y pedidos. Tecnologías: React, Tailwind CSS, Firebase.",
-      image: "ecc.png",
-      link: "https://tenisweb.vercel.app/",
-      featured: false,
     },
 
      
@@ -76,14 +59,7 @@ export default function Services() {
       link: "https://el-campito-app.vercel.app/",
       featured: true,
     },
-    {
-      icon: <Server className="w-6 h-6 text-green-500" />,
-      title: "CostoFinal",
-      description: "Calculadora de precios para emprendedores. React, Tailwind y ShadCN.",
-      image: "coste.png",
-      link: "https://costo-final.vercel.app/",
-      featured: false,
-    },
+
     {
       icon: <Code className="w-6 h-6 text-yellow-400" />,
       title: "Movie App",
@@ -100,15 +76,7 @@ export default function Services() {
       image: "gestorcv.png",
       link: "https://authprofile.vercel.app/",
       featured: false,
-    },
-    {
-      icon: <Server className="w-6 h-6 text-green-500" />,
-      title: "GestiónEM",
-      description: "Sistema Gestión de empleados y clientes. Hecho con React, Tailwind CSS y Firebase.",
-      image: "empleados.png",
-      link: "https://gestion-em.vercel.app/",
-      featured: false,
-    },
+    }
   
   ];
 

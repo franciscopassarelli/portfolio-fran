@@ -15,7 +15,7 @@ const skills = [
     {
       icon: Code,
       name: "Desarrollo Frontend",
-      tech: "React.js, Next.js",
+      tech: "React.js, Next.js, React Native",
       description:
         "Construcción de interfaces de usuario responsivas e interactivas con características modernas de React y Next.js para un rendimiento óptimo.",
       color: "text-blue-500",
@@ -30,7 +30,7 @@ const skills = [
     {
       icon: Database,
       name: "Gestión de Bases de Datos",
-      tech: "MongoDB, Mongoose, Firebase, Firestore y C#",
+      tech: "MongoDB, Firebase, PostgreSQL, SQLserver",
       description: "Diseño e implementación de esquemas y consultas eficientes para una gestión óptima de los datos.",
       color: "text-purple-500",
     },
@@ -58,15 +58,15 @@ const skills = [
     {
       icon: Layers,
       name: "Gestión de Estado",
-      tech: "Redux, Context API",
+      tech: "TanStack Query (React Query), Context API",
       description: "Gestión de estados complejos de aplicaciones con soluciones modernas de gestión de estado.",
       color: "text-indigo-500",
     },
     {
       icon: Cpu,
       name: "Desarrollo de API",
-      tech: "REST, GraphQL",
-      description: "Diseño e implementación de APIs eficientes para una comunicación fluida de datos.",
+      tech: "REST API, GraphQL, NestJS, Express.js",
+      description: "Desarrollo de APIs y servicios backend escalables, integrando autenticación y comunicación entre sistemas.",
       color: "text-red-500",
     },
     {

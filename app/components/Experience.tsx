@@ -11,34 +11,47 @@ export default function Experience() {
   company: "SsySc Tech",
   location: "Remoto",
   period: "sep-2025 - Actualidad",
-  role: "Desarrollador de Software",
+  role: "Full Stack Developer",
   logo: "/ssysctech.jpg",
+  summary:
+  "Participación en proyectos Full Stack para aplicaciones web internas orientadas a la gestión operativa y seguimiento de paquetes internacionales en una empresa del rubro correo/logística.",
+
   responsibilities: [
-    "Desarrollo y mantenimiento de aplicaciones web utilizando Next.js en el frontend y NestJS en el backend.",
-    "Implementación de arquitectura modular en frontend con FSD (versión ligera) y Atomic Design.",
-    "Desarrollo backend con NestJS aplicando principios de arquitectura limpia y Domain-Driven Design (DDD).",
-    "Creación de módulos, controladores, servicios y endpoints REST para distintas funcionalidades del sistema.",
-    "Integración entre frontend y backend, diseño de endpoints y estandarización de respuestas.",
-    "Implementación de SSR/CSR según requerimientos del proyecto y construcción de componentes reutilizables con Material-UI.",
-    "Optimización del código, buenas prácticas, separación por responsabilidades y documentación técnica.",
-    "Colaboración en decisiones de arquitectura, mejora continua y calidad del software."
-  ],
+  "Desarrollo de interfaces utilizando Next.js, Material UI y TypeScript.",
+  "Definición y mantenimiento de arquitectura frontend con FSD y Atomic Design.",
+  "Implementación de flujos de usuario y operaciones CRUD.",
+  "Validación de datos y manejo de errores en frontend.",
+  "Integración y colaboración con servicios backend desarrollados en NestJS bajo arquitecturas basadas en Clean Architecture y DDD.",
+  "Testing unitario y end-to-end utilizando Jest y Playwright.",
+  "Trabajo con metodologías ágiles mediante Jira y control de versiones con Git y GitLab."
+],
 },
 
 
-    {
-      company: "En red consultora",
-      location: "Remoto",
-      period: "oct-2024 - nov-2025",
-      role: "Fullstack Developer",
-      logo: "/enred.jpg",
-      responsibilities: [
-        "Colaboro como Desarrollador en En red Consultora, una agencia especializada en comunicación digital y desarrollo web. Me encargo de:",
-        "Desarrollar sitios web desde cero según requerimientos del cliente.",
-        "Creación de softwares, sistemas, interfaces modernas usando Tecnologías como React.js, Next.js, TypeScript, MongoDB, Tailwind.(u otras herramientas según proyecto).",
-        "Participación en el proceso de subida y despliegue de proyectos, utilizando herramientas como Git y flujos de trabajo con CI/CD, asegurando la correcta conexión con las bases de datos y el funcionamiento estable en producción."
-      ],
-    },
+   {
+  company: "En red consultora",
+  location: "Remoto",
+  period: "oct-2024 - nov-2025",
+  role: "Frontend Developer",
+  logo: "/enred.jpg",
+
+  summary:
+    "Desarrollador Frontend en una consultora orientada a desarrollo web y comunicación digital, participando en proyectos personalizados para distintos clientes.",
+
+  responsibilities: [
+    "Desarrollo de aplicaciones utilizando React.js y React Native.",
+
+    "Implementación de funcionalidades frontend y colaboración en integraciones backend con Node.js y Express.",
+
+    "Integración y manejo de bases de datos MongoDB en distintas funcionalidades del sistema.",
+
+    "Desarrollo de interfaces modernas, responsivas y orientadas a experiencia de usuario.",
+
+    "Despliegue y mantenimiento de aplicaciones en plataformas como Vercel y Render.",
+
+    "Trabajo colaborativo utilizando Git para control de versiones y gestión del código."
+  ],
+},
 
 
     {
@@ -139,6 +152,24 @@ export default function Experience() {
                   <Briefcase className="w-5 h-5 mr-2" />
                   {exp.role}
                 </p>
+                {exp.summary && (
+  <div
+    className="
+      mb-6
+      p-4
+      rounded-2xl
+      border
+      border-cyan-500/20
+      bg-cyan-500/10
+      backdrop-blur-sm
+    "
+  >
+    <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+      {exp.summary}
+    </p>
+  </div>
+)}
+
                 <ul className="list-none space-y-2">
                   {exp.responsibilities.map((resp, idx) => (
                     <li key={idx} className="text-gray-700 dark:text-gray-300 flex items-start">
@@ -146,6 +177,7 @@ export default function Experience() {
                       {resp}
                     </li>
                   ))}
+                  
                 </ul>
               </div>
             </motion.div>
