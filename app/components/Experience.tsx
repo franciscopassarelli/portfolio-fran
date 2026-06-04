@@ -60,12 +60,10 @@ export default function Experience() {
       period: "Abr-2022 - Mar-2025",
       role: "Software Developer",
       responsibilities: [
-        "Desarrollo de soluciones para clientes y simulaciones laborales:",
-        "Sistema tipo ERP para gestión de stock",
-        "Plataforma de turnos online para un club, automatizando las reservas y pagos.",
-        "Tienda e-commerce para una empresa agrícola, conectando con nuevos clientes",
-        "Plataforma para emprendedores y PyMEs.",
-        "Backend autoadministrable con panel de control para e-commerce",
+        "Desarrollo de soluciones para clientes",
+        "Sistema de gestión de stock y ventas para negocios. (Control de inventario, productos, ventas y reportes en tiempo real)",
+        "Plataforma e-commerce para una empresa agrícola. (Visualización de productos y derivando las compras a Mercado Libre)",
+        "Desarrollo de una aplicación móvil para gestión de turnos y recordatorios. (utilizando React Native, con funcionalidades de notificaciones push y sincronización en la nube)",
       ],
     },
 
