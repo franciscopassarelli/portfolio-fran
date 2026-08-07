@@ -7,6 +7,15 @@ import Link from "next/link";
 
 export default function Services() {
   const services = [
+      {
+      icon: <Server className="w-6 h-6 text-yellow-300" />,
+      title: "Champions-cv",
+      description: "Una herramienta simple para crear currículums modernos, profesionales y preparados para conseguir más oportunidades. Permite a los usuarios crear su perfil profesional y luego exportar su CV en formato PDF.",
+      image: "/champions.png",
+      link: "https://cv-studio.franciscopassarelli7.workers.dev/",
+      featured: true,
+    },
+  
 
       {
       icon: <Server className="w-6 h-6 text-green-500" />,
@@ -49,7 +58,7 @@ export default function Services() {
       description: "App web para administrar turnos de canchas de tenis. Permite a los administradores gestionar reservas, horarios y clientes. Sincronizada con la app cliente vía Firebase.",
       image: "/campitoadmin.png",
       link: "https://software-el-campito.vercel.app/",
-      featured: false,
+      featured: true,
     },
     {
       icon: <Server className="w-6 h-6 text-orange-400" />,
@@ -57,7 +66,7 @@ export default function Services() {
       description: "App web para consultar turnos en tiempo real. Sincronizada con la app de administración vía Firebase.",
       image: "/campitoclient.png",
       link: "https://el-campito-app.vercel.app/",
-      featured: true,
+      featured: false,
     },
 
     {
@@ -68,15 +77,6 @@ export default function Services() {
       link: "https://vertbien-stock-pro-v2.vercel.app/login",
       featured: false,
     },
-  
-    {
-      icon: <Server className="w-6 h-6 text-yellow-300" />,
-      title: "AuthProfile",
-      description: "Creación y Exportación de CVs. Permite a los usuarios crear su perfil profesional, agregar experiencia laboral, educación y habilidades, y luego exportar su CV en formato PDF.",
-      image: "/auth.png",
-      link: "https://authprofile.vercel.app/",
-      featured: false,
-    }
   
   ];
 
