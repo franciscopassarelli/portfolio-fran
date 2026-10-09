@@ -3,7 +3,14 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import { Github, Linkedin, Mail, ArrowDown, Code2 } from "lucide-react"
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion"
+import { motion, AnimatePresence, useReducedMotion, type Variants } from "framer-motion"
+import { Space_Grotesk, JetBrains_Mono } from "next/font/google"
+
+// ---------- Tipografías ----------
+// Space Grotesk: geométrica y con carácter, para el nombre
+const displayFont = Space_Grotesk({ subsets: ["latin"], weight: ["700"], display: "swap" })
+// JetBrains Mono: monoespaciada de programación, para el rol y el saludo
+const monoFont = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500"], display: "swap" })
 
 // ---------- Config del badge ----------
 const STATUS_TEXT = "Trabajando en SsySc Tech"
@@ -24,9 +31,7 @@ function StatusBadge() {
       {/* Estado con puntito que late */}
       <div className="flex items-center gap-2">
         <span className="relative flex h-2.5 w-2.5">
-          {!reduceMotion && (
-            <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping" />
-          )}
+          <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 motion-safe:animate-ping" />
           <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
         </span>
         <span className="text-sm font-medium text-slate-200 whitespace-nowrap">{STATUS_TEXT}</span>
@@ -52,6 +57,17 @@ function StatusBadge() {
       </div>
     </div>
   )
+}
+
+// ---------- Animación de entrada escalonada (columna de texto) ----------
+const container: Variants = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.12 } },
+}
+
+const item: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 }
 
 const CodePattern = () => (
@@ -93,25 +109,60 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <motion.div
             className="lg:w-1/2 text-center lg:text-left"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            variants={container}
+            initial="hidden"
+            animate="show"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500">
+            {/* Saludo estilo código */}
+            <motion.p
+              variants={item}
+              className={`${monoFont.className} mb-4 text-sm md:text-base text-cyan-400 tracking-wide`}
+            >
+              <span className="text-slate-500">{"<"}</span>
+              Hola, soy
+              <span className="text-slate-500">{" />"}</span>
+            </motion.p>
+
+            <motion.h1
+              variants={item}
+              className={`${displayFont.className} text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500`}
+            >
               Francisco Passarelli
-            </h1>
+            </motion.h1>
 
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-slate-200">
-              Desarrollador Full Stack
-            </h2>
+            <motion.h2
+              variants={item}
+              className={`${monoFont.className} text-xl md:text-2xl font-medium tracking-tight mb-6 text-slate-200`}
+            >
+              Desarrollador Full Stack{" "}
+              <span className="text-cyan-400">JavaScript</span>
+              <motion.span
+                aria-hidden="true"
+                className="inline-block w-[3px] h-6 md:h-7 ml-1 -mb-1 bg-cyan-400 align-baseline"
+                animate={reduceMotion ? undefined : { opacity: [1, 0, 1] }}
+                transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+              />
+            </motion.h2>
 
-            <p className="text-lg md:text-xl text-slate-400 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Creando experiencias digitales modernas y escalables con tecnologías web actuales.
-              Especializado en aplicaciones full stack, interfaces dinámicas y soluciones enfocadas
-              en rendimiento y experiencia de usuario.
-            </p>
+            {/* Línea decorativa */}
+            <motion.div
+              variants={item}
+              aria-hidden="true"
+              className="h-1 w-20 mb-6 mx-auto lg:mx-0 rounded-full bg-gradient-to-r from-cyan-400 to-indigo-500"
+            />
 
-            <div className="flex justify-center lg:justify-start space-x-4 mb-8">
+            <motion.p
+              variants={item}
+              className="text-lg md:text-xl text-slate-400 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+            >
+              Desarrollo aplicaciones web modernas, combinando{" "}
+              <span className="text-slate-200 font-medium">interfaces intuitivas</span>,{" "}
+              <span className="text-slate-200 font-medium">lógica de negocio</span> e integración con{" "}
+              <span className="text-slate-200 font-medium">servicios backend</span>. Me enfoco en crear
+              soluciones funcionales, mantenibles y orientadas a las necesidades reales de cada proyecto.
+            </motion.p>
+
+            <motion.div variants={item} className="flex justify-center lg:justify-start space-x-4 mb-8">
               <a
                 href="https://github.com/franciscopassarelli?tab=repositories"
                 className="p-3 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-900 transition-all duration-300 shadow-lg hover:scale-105"
@@ -141,21 +192,23 @@ export default function Hero() {
               >
                 <Mail className="w-6 h-6 text-slate-300" />
               </a>
-            </div>
+            </motion.div>
 
-            <motion.button
-              onClick={() =>
-                document.getElementById("about")?.scrollIntoView({
-                  behavior: "smooth",
-                })
-              }
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-2xl hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 shadow-xl hover:shadow-cyan-500/20"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Conoce más
-              <ArrowDown className="w-4 h-4" />
-            </motion.button>
+            <motion.div variants={item}>
+              <motion.button
+                onClick={() =>
+                  document.getElementById("about")?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-2xl hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 shadow-xl hover:shadow-cyan-500/20"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Conoce más
+                <ArrowDown className="w-4 h-4" />
+              </motion.button>
+            </motion.div>
           </motion.div>
 
           <motion.div

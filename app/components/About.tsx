@@ -1,34 +1,31 @@
 "use client"
 
+import type { ElementType } from "react"
 import { motion } from "framer-motion"
-import { Code, Database, GitBranch, Server} from "lucide-react"
-import Image from "next/image"
+import { Briefcase, CalendarDays, GraduationCap, MapPin } from "lucide-react"
+
+type Fact = {
+  icon: ElementType
+  label: string
+  value: string
+}
+
+const FACTS: Fact[] = [
+  { icon: Briefcase, label: "Actualmente", value: "Full Stack Developer en SsySc Tech" },
+  { icon: GraduationCap, label: "Formación", value: "Tecnicatura en Tecnologías Web — UNO" },
+  { icon: CalendarDays, label: "Programando desde", value: "2022" },
+  { icon: MapPin, label: "Ubicación", value: "Buenos Aires, Argentina" },
+]
 
 export default function About() {
-  const skills = [
-    { icon: <Code className="w-8 h-8 text-green-500" />, title: "Frontend", description: "React.js, Next.js, Angular" },
-    { icon: <Server className="w-8 h-8 text-blue-500" />, title: "Backend", description: "Node.js, Express.js, NestJS, C#.NET" },
-    {
-      icon: <Database className="w-8 h-8 text-purple-500" />,
-      title: "Bases de Datos",
-      description: "MongoDB, Firebase, SQL server.",
-    },
-    {
-      icon: <GitBranch className="w-8 h-8 text-indigo-500" />,
-      title: "DevOps & Tools",
-      description: "Docker, Git, GitHub, Postman, Jira.",
-    },
-    
-  ]
-
   return (
     <section
       id="about"
-      className="py-20 bg-gradient-to-br from-green-50 to-blue-100 dark:from-gray-900 dark:to-blue-900 transition-colors duration-300 overflow-hidden relative"
+      className="py-16 bg-gradient-to-br from-green-50 to-blue-100 dark:from-gray-900 dark:to-blue-900 transition-colors duration-300 overflow-hidden relative"
     >
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 max-w-5xl">
         <motion.h2
-          className="text-4xl font-bold mb-8 text-center dark:text-white"
+          className="text-4xl font-bold mb-10 text-center dark:text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -36,43 +33,56 @@ export default function About() {
         >
           Sobre Mí
         </motion.h2>
-        <div className="flex flex-col md:flex-row items-center justify-between">
+
+        <div className="grid md:grid-cols-5 gap-8 items-center">
+          {/* Bio */}
           <motion.div
-            className="md:w-1/2 mb-8 md:mb-0"
-            initial={{ opacity: 0, x: -50 }}
+            className="md:col-span-3 space-y-4 text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
+            initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-            Estudiante de Tecnicatura en tecnologías web en Universidad Nacional del Oeste.
+            <p>
+              Soy desarrollador{" "}
+              <strong className="font-semibold text-gray-900 dark:text-white">Full Stack JavaScript</strong>{" "}
+              y estudiante de la Tecnicatura en Tecnologías Web en la Universidad Nacional del Oeste.
+              Empecé a programar en 2022 de forma autodidacta y me formé en Coderhouse.
             </p>
-            
-            <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-             Mi carrera en programación Full Stack comenzó en 2022 de manera autodidacta, complementando mi formación en la academia Coderhouse.
-             </p>
-            <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
-            Actualmente trabajando como Desarrollador de Software en SsySc Tech.
+            <p>
+              Hoy trabajo en{" "}
+              <strong className="font-semibold text-gray-900 dark:text-white">SsySc Tech</strong>{" "}
+              desarrollando aplicaciones web internas: interfaces, funcionalidades de negocio,
+              integración con APIs y bases de datos.
+            </p>
+            <p>
+              Me importa escribir código claro y mantenible, entender la lógica del negocio detrás de
+              cada funcionalidad. Valoro el trabajo en equipo, las revisiones de código y el aprendizaje continuo.
             </p>
           </motion.div>
-          <motion.div
-            className="md:w-1/2 grid grid-cols-2 gap-6"
-            initial={{ opacity: 0, x: 50 }}
+
+          {/* Datos rápidos */}
+          <motion.ul
+            className="md:col-span-2 space-y-4 rounded-2xl bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-white/60 dark:border-gray-700 shadow-lg p-5"
+            initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            {skills.map((skill, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                {skill.icon}
-                <h3 className="text-xl font-semibold mt-4 mb-2 dark:text-white">{skill.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300">{skill.description}</p>
-              </div>
+            {FACTS.map(({ icon: Icon, label, value }) => (
+              <li key={label} className="flex items-center gap-3">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-500/10">
+                  <Icon className="h-4 w-4 text-blue-500" />
+                </span>
+                <div className="leading-tight">
+                  <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</p>
+                  <p className="text-sm font-medium text-gray-900 dark:text-white">{value}</p>
+                </div>
+              </li>
             ))}
-          </motion.div>
+          </motion.ul>
         </div>
       </div>
     </section>
   )
 }
-
