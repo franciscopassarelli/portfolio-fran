@@ -12,7 +12,16 @@ export default function Services() {
       title: "Champions-cv",
       description: "Una herramienta simple para crear currículums modernos, profesionales y preparados para conseguir más oportunidades. Permite a los usuarios crear su perfil profesional y luego exportar su CV en formato PDF.",
       image: "/champions.png",
-      link: "https://cv-studio.franciscopassarelli7.workers.dev/",
+      link: "https://championscv.com/",
+      featured: true,
+    },
+
+    {
+      icon: <Server className="w-6 h-6 text-orange-400" />,
+      title: "Estratos-3D",
+      description: "Estratos 3D es un generador gratuito de objetos para impresión 3D. Cada diseño del catálogo es un pequeño programa que construye la pieza a partir de tus medidas: dibuja los contornos, los combina con operaciones geométricas, los extruye en capas y verifica el resultado antes de exportarlo.",
+      image: "/estratos3d.png",
+      link: "https://estratos3d.com/",
       featured: true,
     },
   
@@ -32,7 +41,7 @@ export default function Services() {
       description: "Plataforma de delivery de comida que centraliza la gestión de pedidos mediante paneles para clientes, administradores y repartidores, incorporando mensajería en tiempo real para optimizar la coordinación operativa.",
       image: "/fooddelivery.png",
       link: "https://fooddeliverytest.vercel.app/",
-      featured: true,
+      featured: false,
     },
 
      
@@ -59,14 +68,6 @@ export default function Services() {
       image: "/campitoadmin.png",
       link: "https://software-el-campito.vercel.app/",
       featured: true,
-    },
-    {
-      icon: <Server className="w-6 h-6 text-orange-400" />,
-      title: "Campito Tenis - Clientes",
-      description: "App web para consultar turnos en tiempo real. Sincronizada con la app de administración vía Firebase.",
-      image: "/campitoclient.png",
-      link: "https://el-campito-app.vercel.app/",
-      featured: false,
     },
 
     {

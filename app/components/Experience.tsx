@@ -288,7 +288,7 @@ export default function Experience() {
       period: "Abr-2022 - Mar-2025",
       role: "Software Developer",
       responsibilities: [
-        "Desarrollo de soluciones para clientes",
+        "Desarrollo de Estratos 3D, una plataforma web gratuita e intuitiva diseñada para que cualquier usuario pueda generar, personalizar y exportar objetos a medida para impresión 3D",
         "Sistema de gestión de stock y ventas para negocios. (Control de inventario, productos, ventas y reportes en tiempo real)",
         "Plataforma e-commerce para una empresa agrícola. (Visualización de productos y derivando las compras a Mercado Libre)",
         "Desarrollo de una aplicación móvil para gestión de turnos y recordatorios. (utilizando React Native, con funcionalidades de notificaciones push y sincronización en la nube)",

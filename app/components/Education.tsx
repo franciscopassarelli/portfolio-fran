@@ -37,6 +37,18 @@ export default function Education() {
         "Manejo de autenticación y autorización con tokens JWT.",
         "Introducción a la programación con C# y fundamentos de .NET.",
       ]
+    },
+    {
+      degree: "DevOps & Cloud",
+      institution: "Coderhouse",
+      period: "Agosto 2026 – Octubre 2026",
+      achievements: [
+        "Fundamentos de DevOps y diseño de pipelines automatizados de CI/CD.",
+        "Containerización de aplicaciones y gestión de contenedores con Docker.",
+        "Aprovisionamiento de infraestructura automatizada mediante Terraform (IaC).",
+        "Orquestación de servicios y despliegues escalables con Kubernetes.",
+        "Implementación de observabilidad, monitoreo, seguridad y optimización de costos.",
+      ]
     }
   ]
 
@@ -84,7 +96,6 @@ export default function Education() {
           ))}
         </div>
       </div>
-      
     </section>
   )
 }

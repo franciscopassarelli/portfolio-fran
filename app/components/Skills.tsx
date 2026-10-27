@@ -17,7 +17,7 @@ const skills = [
       name: "Desarrollo Frontend",
       tech: "React.js, Next.js, React Native",
       description:
-        "Construcción de interfaces de usuario responsivas e interactivas con características modernas de React y Next.js para un rendimiento óptimo.",
+        "Construcción de interfaces de usuario responsivas e interactivas, React y Next.js para un rendimiento óptimo.",
       color: "text-blue-500",
     },
     {
